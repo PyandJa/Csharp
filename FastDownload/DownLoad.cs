@@ -125,7 +125,7 @@ namespace FastDownload
             try
             {
                 int i;                                                   //用于记录每次下载的有效字节数
-                int nns = Convert.ToInt32(Thread.CurrentThread.Name);    //当前线程的索引
+                int nns = Convert.ToInt32(Thread.CurrentThread.Name);    //当前线程的索引是否
                 while ((i=ss.Read(buffer,0,buffer.Length))>0)            //开始将下载的数据放入缓冲中
                 {
                     fs.Write(buffer, 0, i);                              //将缓冲数据写入到本地文件
